@@ -52,12 +52,12 @@
     },
     {
       "description": "http://schema.org",
-      "origin": "^https?://(\\w).pornhub.com/search?search={search_term_string}",
+      "origin": "^https?://www.pornhub.com/video/search?search={search_term_string}",
       "exclude": "",
       "methods": [],
       "types": "WebSite",
-      "target": "https://www.pornhub.org/video/search?search={search_term_string}",
-      "example": 'https:' == document.location.protocol ? 'https://' : 'http://',
+      "target": "https?://www.pornhub.org/video/search?search={search_term_string}",
+      "example": 'https?:' == document.location.protocol ? 'https://' : 'http://',
       "enable": true,
       "process": "urlDecode",
       "_originRe": {}
